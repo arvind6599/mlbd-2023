@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import pandas as pd
+
 def person_a():
     """Reads the data in data/school_performance.csv
     and returns a dataframe with the first 5,000 rows.
@@ -8,9 +10,11 @@ def person_a():
     Returns:
     dataframe: containing first 5,000 rows of school_performace.csv
     """
+    df = pd.read_csv("./data/school_performance.csv")
+
+    return df.head(5000)
     # Code goes over here.
 
-    
     raise NotImplementedError()
 
 def person_b(df):
